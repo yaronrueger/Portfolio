@@ -1,0 +1,162 @@
+:root{
+    --farbeSchatten:rgba(0, 0, 0, 0.288);
+
+    --farbe1:#1e1a17;
+    --farbe2:#5f4d56;
+    --farbe3:#55909e;
+    --farbe4:#e4ebef;
+    --farbe5: #f9f9f9;
+}
+@font-face {
+    font-family:'LouisGeorgeCafe';
+    font-style: normal;
+    font-weight: 400;
+    src: url(LouisGeorgeCafe/LouisGeorgeCafe.ttf);
+ }
+
+ @font-face {
+    font-family:'LouisGeorgeCafe';
+    font-style: normal;
+    font-weight: 300;
+    src: url(LouisGeorgeCafe/LouisGeorgeCafeLight.ttf);
+ }
+#body{
+    background-color: var(--farbe4);
+    color: var(--farbe1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+.Text{
+    float: left;
+    width: auto;
+    background-color: var(--farbe5);
+    padding: 10px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: 2px solid var(--farbe2);
+    position: relative;
+    overflow: hidden;
+    /*transition: color 1s;*/
+}
+.Text:hover{
+    background-color: var(--farbe5);
+    color: var(--farbe5);
+}
+.Text::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 0;
+    height: 100%;
+    background-color: var(--farbe2);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+.Text:hover::before{
+    width: 150%;
+}
+#Text2{
+    grid-area: TextRechts;
+    box-shadow: 5px 5px 15px var(--farbeSchatten);
+}
+#Text1{
+    grid-area: TextLinks;
+    box-shadow: 5px 5px 15px var(--farbeSchatten);
+}
+#Text3{
+    grid-area: TextLinksUnten;
+    box-shadow: 5px 5px 15px var(--farbeSchatten);
+}
+#Text4{
+    grid-area: TextRechtsUnten;
+    box-shadow: 5px 5px 15px var(--farbeSchatten);
+}
+.GesamtText{
+    display: grid; 
+    grid-template-columns: 50% 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 50px 30px; 
+    grid-template-areas:
+    "TextLinks TextRechts"
+    "TextLinksUnten TextRechtsUnten"; 
+}
+#InhVer{
+    grid-area: inhaltsverzeichnis;
+    background-color: var(--farbe5);
+    margin: 20px;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 15px var(--farbeSchatten);
+}
+.InhaltsBlock{
+    display: grid; 
+    grid-template-columns: 33% 33% 33%; 
+    grid-template-rows: auto; 
+    gap: 20px 10px; 
+    grid-template-areas:
+    ". inhaltsverzeichnis .";
+}
+#ueberschrift{
+    grid-area: ueberschrift;
+    background-color: var(--farbe5);
+    padding:10px;/*innerhalb der border erweitert*/
+    /*margin: 20px;*/ /*außerhalb der border erweitert*/ 
+    box-shadow: 5px 5px 15px var(--farbeSchatten);
+}
+.KopfBlock{
+    display: grid; 
+    grid-template-columns: 0.5% auto 0.5%; 
+    grid-template-rows: auto; 
+    gap: 20px 10px; 
+    grid-template-areas:
+    ". ueberschrift .";
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--farbe3);
+    font-family: "LouisGeorgeCafe";
+    font-weight: 300;
+}
+h1.header{
+    font-weight: 400;
+}
+.GesamtBloecke{
+    width: 100%;
+    box-sizing: border-box;
+    /*border-radius: 15px 15px 15px 15px;*/
+    border-radius: 50px;
+    
+    transition: transform 250ms, color 0.5s;
+}
+.GesamtBloecke1{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.GesamtBloecke:hover {
+    transform: translateY(-10px);
+  }
+.footer{
+    border-top: solid black 2px;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 100px;
+    width: auto;
+}
+.Kopf{
+    text-align: center;
+}
+.Inhaltsverzeichnis{
+    text-align: center;
+}
+.UeberschriftFarbe{
+    text-align: center;
+}
