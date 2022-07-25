@@ -1,26 +1,36 @@
 body{
-    background-color: #333;
+
+
+    height: 8000px; /* Used to enable scrolling */
+    background: linear-gradient(55deg, #333 0%, rgb(56, 54, 54) 51%, rgb(49, 39, 39) 85%);
+
 }
-.headline h1{
+.wrapper {
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
     color: white;
-    text-align: center;
-    
-    overflow: hidden;
-    border-right: .15em solid white;
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: 
-        typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
-}
-
-@keyframes typing{
-    from{width:0}
-    to{width: 100%;}
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white }
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
   }
