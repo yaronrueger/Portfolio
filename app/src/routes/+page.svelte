@@ -3,10 +3,17 @@
     import { fade, blur, fly, slide, scale } from 'svelte/transition';
     import { onMount } from 'svelte';
     import Icon from '@iconify/svelte';
+    import { bounceIn } from 'svelte/easing';
 
     let visible = false;
-    onMount(()=>{ visible = true; })
-    </script>
+    onMount(()=>{ 
+        visible = true; 
+    })
+
+    function animationIcons(){
+
+    }
+</script>
 
 <section class="part1">
     <div class="header">
@@ -34,7 +41,7 @@
         {/if}
     </div>
     {#if visible}
-        <div class="iconDown" in:slide="{{delay: 2760, duration: 500}}">
+        <div id="iconDown"class="iconDown" in:slide="{{delay: 2860, duration: 500}}">
             <Icon icon="bx:down-arrow" style="font-size: 3vh; color:#176B87;"/>
         </div>
     {/if}
@@ -62,7 +69,7 @@
         }
     }
     .part1{
-        min-height: 100vh;
+        min-height: 200vh;
     }
     h1{
         margin: 0;
@@ -85,6 +92,9 @@
     .links{
         padding-top: 2.5vh;
     }
+    .githubIcon::hover{
+        animation: bounce 2s infinite;
+    }
     ul{
         list-style: none;
         padding: 0;
@@ -94,6 +104,10 @@
     }
     .githubIcon{
         padding-right: 2vh;
+    }
+    img:hover{
+        transform: scale(1.3);
+        transition: 0.4s;
     }
     .mailIcon{
         padding-left: 2vh;
