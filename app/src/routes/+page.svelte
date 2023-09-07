@@ -18,16 +18,16 @@
 <section class="part1">
     <div class="header">
         <Typewriter cursor={false} delay={500}>
-            <h1>Hi, my Name is <span class="name">Yaron Rüger</span></h1>
+            <h1>Hi, my name is <span class="name">Yaron Rüger</span></h1>
         </Typewriter>
         <Typewriter cursor={false} delay={1465}>
-            <h2>dual Student of computer science</h2>
+            <h2>dual student of computer science</h2>
         </Typewriter>
         {#if visible}
             <div class="links" in:fade="{{delay: 2500, duration: 2000}}">
                 <ul>
                     <li class="githubIcon">
-                        <a href="https://github.com">
+                        <a href="https://github.com/yaronrueger">
                             <img  src="../../githubIcon.svg" alt="">
                         </a>
                     </li>
