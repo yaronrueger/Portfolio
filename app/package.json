@@ -11,6 +11,7 @@
 	},
 	"devDependencies": {
 		"@iconify/svelte": "^3.1.4",
+		"@svelte-plugins/tooltips": "^0.1.6",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"svelte": "^4.0.5",
@@ -22,6 +23,7 @@
 	"type": "module",
 	"dependencies": {
 		"iconify-icon": "^1.0.8",
+		"svelte-tooltip": "^1.2.0",
 		"svelte-typewriter": "^3.1.6"
 	}
 }
