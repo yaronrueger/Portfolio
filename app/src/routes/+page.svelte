@@ -3,7 +3,7 @@
     import { fade, blur, fly, slide, scale } from 'svelte/transition';
     import { onMount } from 'svelte';
     import Icon from '@iconify/svelte';
-    import { bounceIn } from 'svelte/easing';
+    import Tooltip from "sv-tooltip";
 
     let visible = false;
 
@@ -57,10 +57,9 @@
             </div>
             <div class="textChild">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Hi, I'm Yaron, I'm from Germany, Nuremberg, 
+                    and I am currently studying Computer Science at 
+                    University as a dual student of Deutsche Telekom AG.
                 </p>
             </div>
         </div>
@@ -73,30 +72,46 @@
         <div class="skillsList">
             <ul>
                 <li>
-                    <Icon icon="logos:java" width="5vh" height="5vh"/>
+                    <Tooltip tip="Java" bottom>
+                        <Icon icon="logos:java" width="5vh" height="5vh"/>
+                    </Tooltip>
                 </li>
                 <li>
-                    <Icon icon="logos:python" width="5vh" height="5vh"/>
+                    <Tooltip tip="Python" bottom>
+                        <Icon icon="logos:python" width="5vh" height="5vh"/>
+                    </Tooltip>
                 </li>
                 <li>
-                    <Icon icon="devicon:c" width="5vh" height="5vh" />
+                    <Tooltip tip="C" bottom>
+                        <Icon icon="devicon:c" width="5vh" height="5vh" />
+                    </Tooltip>
                 </li>
                 <li>
-                    <Icon icon="logos:postgresql" width="5vh" height="5vh" />
+                    <Tooltip tip="PostgreSQL" bottom>
+                        <Icon icon="logos:postgresql" width="5vh" height="5vh" />
+                    </Tooltip>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <Icon icon="devicon:typescript" width="5vh" height="5vh"/>
+                    <Tooltip tip="Typescript" bottom>
+                        <Icon icon="devicon:typescript" width="5vh" height="5vh"/>
+                    </Tooltip>
                 </li>
                 <li>
-                    <Icon icon="logos:javascript" width="5vh" height="5vh"/>
+                    <Tooltip tip="Javascript" bottom>
+                        <Icon icon="logos:javascript" width="5vh" height="5vh"/>
+                    </Tooltip>
                 </li>
                 <li>
-                    <Icon icon="devicon:svelte" width="5vh" height="5vh"/>
+                    <Tooltip tip="Svelte(Kit)" bottom>
+                        <Icon icon="devicon:svelte" width="5vh" height="5vh"/>
+                    </Tooltip>
                 </li>
                 <li>
-                    <Icon icon="flat-color-icons:android-os" width="5vh" height="5vh"/>
+                    <Tooltip tip="Android" bottom>
+                        <Icon icon="flat-color-icons:android-os" width="5vh" height="5vh"/>
+                    </Tooltip>
                 </li>
             </ul>
         </div>
