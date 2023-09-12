@@ -54,73 +54,77 @@
                 <h1>About me</h1>
             </div>
             <div class="aboutMeParent">
-                <div class="pictureMeChild" use:reveal={{ transition: "fade", delay:700}}>
-                    <img src="../..//me.jpeg" alt="">
-                </div>
                 <div class="textChild" use:reveal={{ transition: "fade", delay:700}}>
                     <p>
-                        Hi, I'm Yaron, I'm from Germany, Nuremberg, 
-                        and I am currently studying Computer Science at 
-                        University as a dual student of Deutsche Telekom AG.
+                        Hello everyone!<br> 
+                        My name is Yaron Rüger and I am a dual student of Computer Science at the Hochschule Provadis in Frankfurt, Germany. My passion for technology and problem solving has led me to pursue a career in this exciting field. My skills include backend development, where I have gained experience in creating and updating efficient and scalable systems. I also have some front-end development experience, which allows me to create user-friendly interfaces for the applications I build.
                     </p>
+                    <div class="skills">
+                        <div class="skillsHeader" use:reveal={{ transition: "fade", delay:800}}>
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="skillsList" use:reveal={{ transition: "fade", delay:990}}>
+                            <div>        
+                                <Tooltip tip="Java" bottom>
+                                    <Icon icon="logos:java" width="5vh" height="5vh"/>
+                                </Tooltip>
+                            </div>
+                            <div>
+                                <Tooltip tip="Python" bottom>
+                                    <Icon icon="logos:python" width="5vh" height="5vh"/>
+                                </Tooltip>
+                            </div>
+                            <div>
+                                <Tooltip tip="C" bottom>
+                                    <Icon icon="devicon:c" width="5vh" height="5vh" />
+                                </Tooltip>
+                            </div>
+                            <div>
+                                <Tooltip tip="PostgreSQL" bottom>
+                                    <Icon icon="logos:postgresql" width="5vh" height="5vh" />
+                                </Tooltip>
+                            </div>
+                            <div>
+                                <Tooltip tip="Typescript" bottom>
+                                    <Icon icon="devicon:typescript" width="5vh" height="5vh"/>
+                                </Tooltip>
+                            </div>
+                            <div>
+                                <Tooltip tip="Javascript" bottom>
+                                    <Icon icon="logos:javascript" width="5vh" height="5vh"/>
+                                </Tooltip>
+                            </div>
+                            <div>
+                                <Tooltip tip="Svelte(Kit)" bottom>
+                                    <Icon icon="devicon:svelte" width="5vh" height="5vh"/>
+                                </Tooltip>
+                            </div>
+                            <div>
+                                <Tooltip tip="Android" bottom>
+                                    <Icon icon="flat-color-icons:android-os" width="5vh" height="5vh"/>
+                                </Tooltip>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pictureMeChild" use:reveal={{ transition: "fade", delay:700}}>
+                    <img src="../..//me.jpeg" alt="">
                 </div>
             </div>
             
         </div>
-        <div class="skills">
-            <div class="skillsHeader" use:reveal={{ transition: "fade", delay:800}}>
-                <h2>Skills</h2>
-            </div>
-            <div class="skillsList" use:reveal={{ transition: "fade", delay:990}}>
-                <div>        
-                    <Tooltip tip="Java" bottom>
-                        <Icon icon="logos:java" width="5vh" height="5vh"/>
-                    </Tooltip>
-                </div>
-                <div>
-                    <Tooltip tip="Python" bottom>
-                        <Icon icon="logos:python" width="5vh" height="5vh"/>
-                    </Tooltip>
-                </div>
-                <div>
-                    <Tooltip tip="C" bottom>
-                        <Icon icon="devicon:c" width="5vh" height="5vh" />
-                    </Tooltip>
-                </div>
-                <div>
-                    <Tooltip tip="PostgreSQL" bottom>
-                        <Icon icon="logos:postgresql" width="5vh" height="5vh" />
-                    </Tooltip>
-                </div>
-                <div>
-                    <Tooltip tip="Typescript" bottom>
-                        <Icon icon="devicon:typescript" width="5vh" height="5vh"/>
-                    </Tooltip>
-                </div>
-                <div>
-                    <Tooltip tip="Javascript" bottom>
-                        <Icon icon="logos:javascript" width="5vh" height="5vh"/>
-                    </Tooltip>
-                </div>
-                <div>
-                    <Tooltip tip="Svelte(Kit)" bottom>
-                        <Icon icon="devicon:svelte" width="5vh" height="5vh"/>
-                    </Tooltip>
-                </div>
-                <div>
-                    <Tooltip tip="Android" bottom>
-                        <Icon icon="flat-color-icons:android-os" width="5vh" height="5vh"/>
-                    </Tooltip>
-                </div>
-            </div>
-        </div>
+        
         <div class="iconDownUp" use:reveal={{ transition: "fade", delay:1100}}>
-            <a href="#header">
-                <Icon icon="bx:up-arrow" style="font-size: 3vh; color:#176B87;"/>
-            </a>
-            <a href="#projects">
-                <Icon icon="bx:down-arrow" style="font-size: 3vh; color:#176B87;"/>
-            </a>
+            <div class="arrowUp">
+                <a href="#header">
+                    <Icon icon="mingcute:arrow-up-fill" style="font-size: 3vh" color="#176b87" />
+                </a>
+            </div>
+            <div class="arrowDown">
+                <a href="#projects">
+                    <Icon icon="mingcute:arrow-down-fill" style="font-size: 3vh" color="#176b87" />
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -131,9 +135,9 @@
             <h1 >Projects</h1>
         </div>
 
-        <div id="iconDown" class="iconUp">
+        <div class="iconUp">
             <a href="#aboutMe">
-                <Icon icon="bx:up-arrow" style="font-size: 3vh; color:#176B87;"/>
+                <Icon icon="mingcute:arrow-up-fill" style="font-size: 3vh" color="#176b87" />
             </a>
         </div>
     </div>
@@ -166,13 +170,11 @@
     
     .starterPage, .aboutMePage, .projectsPage{
         min-height: 100vh;
-        max-height: 100vh;
         display: flex;
         justify-content: center;
     }
     h1{
         margin: 0;
-        padding: 10px;
         font-size:5vh;
     }
     .name {
@@ -220,17 +222,16 @@
     .aboutMeParent{
         display: flex;
         justify-content: center;
+        flex-direction: row;
         align-items: center;
-        flex-direction: column;
     }
     .pictureMeChild img{
-        border-radius: 200%;
+        border-radius: 10%;
         width: 20vh;
         height: 30vh;
         object-fit: cover;
     }
     .textChild{
-        margin-top: 3vh;
         font-size: large;
         max-width: 100vh;
         
@@ -248,7 +249,7 @@
         text-align: center;
     }
     .skillsHeader h2{
-        font-size: 4.5vh;
+        font-size: 2.5vh;
     }
     .skillsList{
         display: flex;
@@ -257,17 +258,20 @@
         gap: 20px;
         flex-wrap: wrap;
     }
-    .iconDown, .iconDownUp, .iconUp{
+    .iconDownUp, .iconUp{
         position: absolute;
-        text-align: center;
-        width: 70%;
+        text-align: right;
+        width: 80%;
     }
     .iconDown{
+        text-align: center;
+        position: absolute;
+        width: 70%;
         top: 95.5vh;
         animation: bounce 2s infinite;
     }
     .iconDownUp{
-        top: 195.5vh;
+        top: 192vh;
     }
     .iconUp{
         top: 295.5vh;
