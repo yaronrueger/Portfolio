@@ -57,7 +57,8 @@
                 <div class="textChild" use:reveal={{ transition: "fade", delay:700}}>
                     <p>
                         Hello everyone!<br> 
-                        My name is Yaron Rüger and I am a dual student of Computer Science at the Hochschule Provadis in Frankfurt, Germany. My passion for technology and problem solving has led me to pursue a career in this exciting field. My skills include backend development, where I have gained experience in creating and updating efficient and scalable systems. I also have some front-end development experience, which allows me to create user-friendly interfaces for the applications I build.
+                        My name is Yaron Rüger and I am a dual student of Computer Science at the Hochschule Provadis in Frankfurt, Germany. My passion for technology and problem solving has led me to pursue a career in this exciting field. <br> 
+                        My skills include backend development, where I have gained experience in creating and updating efficient and scalable systems. I also have some front-end development experience, which allows me to create user-friendly interfaces for the applications I build.
                     </p>
                     <div class="skills">
                         <div class="skillsHeader" use:reveal={{ transition: "fade", delay:800}}>
