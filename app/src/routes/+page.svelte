@@ -57,7 +57,7 @@
                 <div class="textChild" use:reveal={{ transition: "fade", delay:700}}>
                     <p>
                         Hello everyone!<br> 
-                        My name is Yaron Rüger and I am a dual student of Computer Science at the Hochschule Provadis in Frankfurt, Germany. My passion for technology and problem solving has led me to pursue a career in this exciting field. <br> 
+                        My name is Yaron Rüger and I am studying Computer Science at the Hochschule Provadis in Frankfurt, Germany. My passion for technology and problem solving has led me to pursue a career in this exciting field. <br> 
                         My skills include backend development, where I have gained experience in creating and updating efficient and scalable systems. I also have some front-end development experience, which allows me to create user-friendly interfaces for the applications I build.
                     </p>
                     <div class="skills">
@@ -114,19 +114,6 @@
             </div>
             
         </div>
-        
-        <div class="iconDownUp" use:reveal={{ transition: "fade", delay:1100}}>
-            <div class="arrowUp">
-                <a href="#header">
-                    <Icon icon="mingcute:arrow-up-fill" style="font-size: 3vh" color="#176b87" />
-                </a>
-            </div>
-            <div class="arrowDown">
-                <a href="#projects">
-                    <Icon icon="mingcute:arrow-down-fill" style="font-size: 3vh" color="#176b87" />
-                </a>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -134,12 +121,6 @@
     <div class="projects">
         <div class="projectHeader">
             <h1 >Projects</h1>
-        </div>
-
-        <div class="iconUp">
-            <a href="#aboutMe">
-                <Icon icon="mingcute:arrow-up-fill" style="font-size: 3vh" color="#176b87" />
-            </a>
         </div>
     </div>
 </section>
@@ -259,22 +240,11 @@
         gap: 20px;
         flex-wrap: wrap;
     }
-    .iconDownUp, .iconUp{
-        position: absolute;
-        text-align: right;
-        width: 80%;
-    }
     .iconDown{
         text-align: center;
         position: absolute;
         width: 70%;
         top: 95.5vh;
         animation: bounce 2s infinite;
-    }
-    .iconDownUp{
-        top: 192vh;
-    }
-    .iconUp{
-        top: 295.5vh;
     }
 </style>
