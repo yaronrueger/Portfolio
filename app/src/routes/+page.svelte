@@ -1,16 +1,18 @@
 <script lang="ts">
-    import Typewriter from 'svelte-typewriter'
+    import Typewriter from 'svelte-typewriter';
     import { fade, blur, fly, slide, scale } from 'svelte/transition';
     import { onMount } from 'svelte';
     import Icon from '@iconify/svelte';
     import Tooltip from "sv-tooltip";
     import { reveal } from 'svelte-reveal';
+    import githubRepos from '../lib/githubRepos.svelte'
+    import GithubRepos from '../lib/githubRepos.svelte';
 
     let visible = false;
 
-    onMount(()=>{ 
-        visible = true; 
-    })
+    onMount(() => {
+        visible = true;
+    });
 </script>
 
 <section class="starterPage" id="header">
@@ -112,7 +114,6 @@
                     <img src="../..//me.jpeg" alt="">
                 </div>
             </div>
-            
         </div>
     </div>
 </section>
@@ -121,6 +122,9 @@
     <div class="projects">
         <div class="projectHeader">
             <h1 >Projects</h1>
+        </div>
+        <div class="repos">
+            <GithubRepos></GithubRepos>
         </div>
     </div>
 </section>
