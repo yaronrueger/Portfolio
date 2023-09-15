@@ -5,14 +5,25 @@
     import Icon from '@iconify/svelte';
     import Tooltip from "sv-tooltip";
     import { reveal } from 'svelte-reveal';
-    import githubRepos from '../lib/githubRepos.svelte'
     import GithubRepos from '../lib/githubRepos.svelte';
+    import { Avatar, Dropdown, DropdownHeader, DropdownItem, DropdownDivider} from 'flowbite-svelte';
 
     let visible = false;
 
     onMount(() => {
         visible = true;
     });
+
+    let skills =[
+            {tip:"Java", icon:"logos:java"},
+            {tip:"Python",icon:"logos:python"},
+            {tip:"C",icon:"devicon:c"},
+            {tip:"PostgreSQL",icon:"logos:postgresql"},
+            {tip:"Android",icon:"flat-color-icons:android-os"},
+            {tip:"Typescript",icon:"devicon:typescript"},
+            {tip:"Javascript",icon:"logos:javascript"},
+            {tip:"Svelte(Kit)",icon:"devicon:svelte"}
+        ]
 </script>
 
 <section class="starterPage" id="header">
@@ -25,18 +36,16 @@
         </Typewriter>
         {#if visible}
             <div class="links" in:fade="{{delay: 2500, duration: 2000}}">
-                <ul>
-                    <li class="githubIcon">
+                    <div class="githubIcon">
                         <a href="https://github.com/yaronrueger">
                             <img  src="../../githubIcon.svg" alt="">
                         </a>
-                    </li>
-                    <li class="mailIcon">
+                    </div>
+                    <div class="mailIcon">
                         <a href="https://github.com">
                             <img  src="../../mailIcon.svg" alt="">
                         </a>
-                    </li>
-                </ul>
+                    </div>
             </div>
         {/if}
     </div>
@@ -56,62 +65,29 @@
                 <h1>About me</h1>
             </div>
             <div class="aboutMeParent">
+                <div class="picture" use:reveal={{ transition: "fade", delay:700}}>
+                    <img src="../..//me.jpeg" alt="" class="rounded-full"/>
+                </div>
                 <div class="textChild" use:reveal={{ transition: "fade", delay:700}}>
                     <p>
                         Hello everyone!<br> 
                         My name is Yaron Rüger and I am studying Computer Science at the Hochschule Provadis in Frankfurt, Germany. My passion for technology and problem solving has led me to pursue a career in this exciting field. <br> 
                         My skills include backend development, where I have gained experience in creating and updating efficient and scalable systems. I also have some front-end development experience, which allows me to create user-friendly interfaces for the applications I build.
                     </p>
-                    <div class="skills">
-                        <div class="skillsHeader" use:reveal={{ transition: "fade", delay:800}}>
-                            <h2>Skills</h2>
-                        </div>
-                        <div class="skillsList" use:reveal={{ transition: "fade", delay:990}}>
-                            <div>        
-                                <Tooltip tip="Java" bottom>
-                                    <Icon icon="logos:java" width="5vh" height="5vh"/>
-                                </Tooltip>
-                            </div>
-                            <div>
-                                <Tooltip tip="Python" bottom>
-                                    <Icon icon="logos:python" width="5vh" height="5vh"/>
-                                </Tooltip>
-                            </div>
-                            <div>
-                                <Tooltip tip="C" bottom>
-                                    <Icon icon="devicon:c" width="5vh" height="5vh" />
-                                </Tooltip>
-                            </div>
-                            <div>
-                                <Tooltip tip="PostgreSQL" bottom>
-                                    <Icon icon="logos:postgresql" width="5vh" height="5vh" />
-                                </Tooltip>
-                            </div>
-                            <div>
-                                <Tooltip tip="Typescript" bottom>
-                                    <Icon icon="devicon:typescript" width="5vh" height="5vh"/>
-                                </Tooltip>
-                            </div>
-                            <div>
-                                <Tooltip tip="Javascript" bottom>
-                                    <Icon icon="logos:javascript" width="5vh" height="5vh"/>
-                                </Tooltip>
-                            </div>
-                            <div>
-                                <Tooltip tip="Svelte(Kit)" bottom>
-                                    <Icon icon="devicon:svelte" width="5vh" height="5vh"/>
-                                </Tooltip>
-                            </div>
-                            <div>
-                                <Tooltip tip="Android" bottom>
-                                    <Icon icon="flat-color-icons:android-os" width="5vh" height="5vh"/>
-                                </Tooltip>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="pictureMeChild" use:reveal={{ transition: "fade", delay:700}}>
-                    <img src="../..//me.jpeg" alt="">
+                <div class="skills">
+                    <div class="skillsHeader" use:reveal={{ transition: "fade", delay:800}}>
+                        <h2>Skills</h2>
+                    </div>
+                    <div class="skillsList" use:reveal={{ transition: "fade", delay:990}}>
+                        {#each skills as skill}
+                        <div>        
+                            <Tooltip tip={skill.tip} style="font-size:2vh" bottom>
+                                <Icon icon={skill.icon} width="5vh" height="5vh"/>
+                            </Tooltip>
+                        </div>
+                        {/each}
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,15 +129,17 @@
             transform: translateY(-15px);
         }
     }
-    
     .starterPage, .aboutMePage, .projectsPage{
         min-height: 100vh;
         display: flex;
         justify-content: center;
     }
-    h1{
+    .starterPage, .aboutMePage, .projectsPage h1{
         margin: 0;
         font-size:5vh;
+    }
+    .starterPage h2{
+        font-size: 2.5vh;
     }
     .name {
     color: #64CCC5;
@@ -178,22 +156,14 @@
     .githubIcon::hover{
         animation: bounce 2s infinite;
     }
-    ul{
-        list-style: none;
-        padding: 0;
-    }
-    li{
-        display: inline;
-    }
-    .githubIcon{
-        padding-right: 2vh;
+    .links{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
     }
     .links img:hover{
         transform: scale(1.3);
         transition: 0.4s;
-    }
-    .mailIcon{
-        padding-left: 2vh;
     }
     .aboutSkills, .projects{
         width: 70%;
@@ -202,52 +172,56 @@
         padding-top: 7vh;
     }
     .aboutMeHeader, .projectHeader{
-        
         color: #64CCC5;
     }
     .aboutMeParent{
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
-    .pictureMeChild img{
-        border-radius: 10%;
-        width: 20vh;
-        height: 30vh;
+    .picture{
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 1.5vh;
+    }
+    .aboutMeParent img{
+        width: 100%;
+        height: auto;
         object-fit: cover;
+        display: block;
     }
     .textChild{
-        font-size: large;
         max-width: 100vh;
-        
         text-align:center;
-
         border-style: solid;
         border-width: 2px 0 2px 0;
         border-color: #176B87;
+        font-size: 2vh;
     }
-    
     .skills{
         color: #64CCC5;
+        padding-top: 1.5vh;
     }
     .skillsHeader{
         text-align: center;
+        margin-bottom: 2vh;
     }
     .skillsHeader h2{
-        font-size: 2.5vh;
+        font-size: 3.5vh;
     }
     .skillsList{
         display: flex;
         flex-direction: row;
         justify-content:center;
-        gap: 20px;
+        gap: 30px;
         flex-wrap: wrap;
     }
     .iconDown{
-        text-align: center;
+        text-align:end;
         position: absolute;
-        width: 70%;
         top: 95.5vh;
         animation: bounce 2s infinite;
     }

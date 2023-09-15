@@ -20,7 +20,7 @@
     {#each projects as project}
         <div class="reposChild">
             <li>
-                <Card href={project.url}>
+                <Card href={project.url} size="lg">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {project.name}
                     </h5>
@@ -41,8 +41,10 @@
     .reposParent{
         padding-top: 4vh;
         display: flex;
-        justify-content: left;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         gap: 20px;
     }
+    
 </style>
