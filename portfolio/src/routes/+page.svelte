@@ -15,27 +15,8 @@
         visible = true;
     });
 
-    let yPosition: number = 0;
-
-    function showBackToTop(y: number) {
-        if (typeof document !== 'undefined') {
-		const backToTop = document.getElementById('backToTop');
-
-		if (window.innerWidth > 576) {
-			if (backToTop) {
-				if (y > 400) {
-					backToTop.classList.remove('slide-out');
-					backToTop.style.display = 'flex';
-				} else {
-					backToTop.classList.add('slide-out');
-				}
-			}
-		}}
-	}
-    $:showBackToTop(yPosition);
 </script>
 
-<svelte:window bind:scrollY={yPosition} />
 <div class="darkMode">
     <DarkMode />
 </div>

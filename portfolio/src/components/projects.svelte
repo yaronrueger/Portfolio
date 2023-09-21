@@ -3,7 +3,7 @@
     import { onMount } from 'svelte';
     import { Card } from 'flowbite-svelte';
     
-    let projects:any[] = [];
+    let projects = [];
 
     onMount(async () => {
         const response = await axios.get('http://api.github.com/users/yaronrueger/repos')
