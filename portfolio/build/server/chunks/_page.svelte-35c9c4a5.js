@@ -5,7 +5,7 @@ const void_element_names = /^(?:area|base|br|col|command|embed|hr|img|input|keyg
 function is_void(name) {
   return void_element_names.test(name) || name.toLowerCase() === "!doctype";
 }
-const css$8 = {
+const css$7 = {
   code: "@keyframes svelte-1gv2i7t-cursorFade{0%,100%{opacity:1}50%{opacity:0}}.typewriter-container.svelte-1gv2i7t *:not(.typing):not(.finished-typing):not([data-static]){display:none}.typewriter-container.svelte-1gv2i7t .finished-typing::after{content:none}.cursor.svelte-1gv2i7t .typing::after{content:'';width:var(--cursor-width, 1ch);height:2ch;display:inline-block;vertical-align:text-top;background-color:var(--cursor-color, #000000);animation:svelte-1gv2i7t-cursorFade 1.25s infinite}",
   map: null
 };
@@ -62,7 +62,7 @@ const Typewriter = create_ssr_component(($$result, $$props, $$bindings, slots) =
     $$bindings.unwriteInterval(unwriteInterval);
   if ($$props.wordInterval === void 0 && $$bindings.wordInterval && wordInterval !== void 0)
     $$bindings.wordInterval(wordInterval);
-  $$result.css.add(css$8);
+  $$result.css.add(css$7);
   isLoopMode = /^loop(Once|Random)?$/.test(mode);
   isFiniteCursorMode = ["concurrent", "cascade", "loopOnce"].includes(mode);
   invalidCursorOnFinish = !isFiniteCursorMode && keepCursorOnFinish;
@@ -1806,41 +1806,6 @@ const Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   }
   return `${data ? `${data.svg ? `<svg${spread([escape_object(data.attributes)], {})}><!-- HTML_TAG_START -->${data.body}<!-- HTML_TAG_END --></svg>` : `<span${spread([escape_object(data.attributes)], {})}></span>`}` : ``}`;
 });
-const css$7 = {
-  code: '.tooltip-slot.svelte-xu3t82{position:relative;display:inline-block}.tooltip.svelte-xu3t82{position:absolute;display:block;white-space:nowrap;opacity:0;z-index:-1;background-color:var(--tooltip-color)}.tooltip.active.svelte-xu3t82{opacity:1;z-index:10}.tooltip.svelte-xu3t82{padding-top:0.25rem;padding-bottom:0.25rem;padding-left:0.5rem;padding-right:0.5rem;transition-duration:300ms;color:#ffffff;border-radius:0.25rem}.tip.svelte-xu3t82::before{content:"";position:absolute;border:8px solid transparent;border-top:0;border-bottom:8px solid var(--tooltip-color);z-index:-1}.tip.top.svelte-xu3t82::before{left:50%;bottom:0;transform:translate(-50%, 100%) rotate(180deg)}.tip.right.svelte-xu3t82::before{left:-12px;top:var(--top-gap);transform:rotate(270deg)}.tip.bottom.svelte-xu3t82::before{left:50%;top:0;transform:translate(-50%, -100%)}.tip.left.svelte-xu3t82::before{right:-12px;top:var(--top-gap);transform:rotate(90deg)}.tooltip.active.svelte-xu3t82{opacity:1;visibility:initial}',
-  map: null
-};
-const Tooltip = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["tip", "top", "right", "bottom", "left", "active", "color"]);
-  let { tip = "" } = $$props;
-  let { top = false } = $$props;
-  let { right = false } = $$props;
-  let { bottom = false } = $$props;
-  let { left = false } = $$props;
-  let { active = false } = $$props;
-  let { color = "#0f172a" } = $$props;
-  if ($$props.tip === void 0 && $$bindings.tip && tip !== void 0)
-    $$bindings.tip(tip);
-  if ($$props.top === void 0 && $$bindings.top && top !== void 0)
-    $$bindings.top(top);
-  if ($$props.right === void 0 && $$bindings.right && right !== void 0)
-    $$bindings.right(right);
-  if ($$props.bottom === void 0 && $$bindings.bottom && bottom !== void 0)
-    $$bindings.bottom(bottom);
-  if ($$props.left === void 0 && $$bindings.left && left !== void 0)
-    $$bindings.left(left);
-  if ($$props.active === void 0 && $$bindings.active && active !== void 0)
-    $$bindings.active(active);
-  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
-    $$bindings.color(color);
-  $$result.css.add(css$7);
-  return `<span class="tooltip-slot svelte-xu3t82">${slots.default ? slots.default({}) : ``} <div${spread([escape_object($$restProps)], {
-    classes: "tooltip " + (active ? "active" : "") + " svelte-xu3t82"
-  })}>${tip ? `<div class="${[
-    "svelte-xu3t82",
-    "tip " + (top ? "top" : "") + " " + (right ? "right" : "") + " " + (bottom ? "bottom" : "") + " " + (left ? "left" : "")
-  ].join(" ").trim()}"><!-- HTML_TAG_START -->${tip}<!-- HTML_TAG_END --></div>` : `${slots["custom-tip"] ? slots["custom-tip"]({}) : ``}`}</div> </span>`;
-});
 const css$6 = {
   code: "@font-face{font-family:'RandyGG';font-style:normal;src:url(/fonts/RandyGG/randy-gg.ttf)}@font-face{font-family:'LouisGeorgeCafe';font-style:normal;src:url(/fonts/LouisGeorgeCafe/LouisGeorgeCafeLight.ttf)}main.svelte-gpgb95.svelte-gpgb95{font-family:LouisGeorgeCafe;min-height:95vh;display:flex;flex-direction:column}.starterPage.svelte-gpgb95 h1.svelte-gpgb95{font-size:4em}.starterPage.svelte-gpgb95 h2.svelte-gpgb95{font-size:2em}.header.svelte-gpgb95.svelte-gpgb95{text-align:center;padding-top:30vh}.icons.svelte-gpgb95.svelte-gpgb95{padding-top:25px;display:flex;flex-direction:row;justify-content:center;gap:25px}.github.svelte-gpgb95.svelte-gpgb95:hover,.mail.svelte-gpgb95.svelte-gpgb95:hover{transform:scale(1.3);transition:0.4s}",
   map: null
@@ -2251,28 +2216,15 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   ];
   $$result.css.add(css$4);
   return `<main class="svelte-1qoajfd"><div class="skillsHeader svelte-1qoajfd" data-svelte-h="svelte-1aug2wz"><h2 class="text-portfolioDark2-100 dark:text-portfolioDark2-200 svelte-1qoajfd">Skills</h2></div> <div class="skillsParent svelte-1qoajfd"><div class="skills svelte-1qoajfd">${each(skills, (skill) => {
-    return `<div class="skill"><div class="skillIcon">${validate_component(Tooltip, "Tooltip").$$render(
+    return `<div class="skill"><div class="skillIcon">${validate_component(Icon, "Icon").$$render(
       $$result,
       {
-        tip: skill.tip,
-        style: "font-size:1.5vh",
-        bottom: true
+        icon: skill.icon,
+        width: "5vh",
+        height: "5vh"
       },
       {},
-      {
-        default: () => {
-          return `${validate_component(Icon, "Icon").$$render(
-            $$result,
-            {
-              icon: skill.icon,
-              width: "5vh",
-              height: "5vh"
-            },
-            {},
-            {}
-          )} `;
-        }
-      }
+      {}
     )}</div> <div class="skillBar">${validate_component(AdvancedRating, "AdvancedRating").$$render(
       $$result,
       {
@@ -2367,53 +2319,27 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} <div class="icons svelte-19xgcfk">${validate_component(Tooltip, "Tooltip").$$render(
+  )} <div class="icons svelte-19xgcfk"><div class="github svelte-19xgcfk"><a href="https://github.com/yaronrueger">${validate_component(Icon, "Icon").$$render(
     $$result,
     {
-      tip: "GitHub",
-      style: "font-size:1.5vh",
-      bottom: true
+      icon: "ri:github-fill",
+      class: "text-portfolioDark2-100 dark:text-portfolioDark2-200",
+      width: "5vh",
+      height: "5vh"
     },
     {},
-    {
-      default: () => {
-        return `<div class="github svelte-19xgcfk"><a href="https://github.com/yaronrueger">${validate_component(Icon, "Icon").$$render(
-          $$result,
-          {
-            icon: "ri:github-fill",
-            class: "text-portfolioDark2-100 dark:text-portfolioDark2-200",
-            width: "5vh",
-            height: "5vh"
-          },
-          {},
-          {}
-        )}</a></div>`;
-      }
-    }
-  )} ${validate_component(Tooltip, "Tooltip").$$render(
+    {}
+  )}</a></div> <div class="mail svelte-19xgcfk"><a href="mailto:yaronrueger@yahoo.de">${validate_component(Icon, "Icon").$$render(
     $$result,
     {
-      tip: "Mail",
-      style: "font-size:1.5vh",
-      bottom: true
+      icon: "ion:mail-outline",
+      class: "text-portfolioDark2-100 dark:text-portfolioDark2-200",
+      width: "5vh",
+      height: "5vh"
     },
     {},
-    {
-      default: () => {
-        return `<div class="mail svelte-19xgcfk"><a href="https://github.com">${validate_component(Icon, "Icon").$$render(
-          $$result,
-          {
-            icon: "ion:mail-outline",
-            class: "text-portfolioDark2-100 dark:text-portfolioDark2-200",
-            width: "5vh",
-            height: "5vh"
-          },
-          {},
-          {}
-        )}</a></div>`;
-      }
-    }
-  )}</div> </main>`;
+    {}
+  )}</a></div></div> </main>`;
 });
 const css = {
   code: ":root{scroll-behavior:smooth}@keyframes svelte-hg7nah-bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-20px)}60%{transform:translateY(-15px)}}@keyframes svelte-hg7nah-slide-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes svelte-hg7nah-slide-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(20px)}}.darkMode.svelte-hg7nah{position:fixed;right:15px;top:15px}.iconUp.svelte-hg7nah{position:fixed;right:15px;bottom:15px;visibility:hidden}.iconDown.svelte-hg7nah{display:flex;justify-content:center;width:100%;min-height:5vh;max-height:5vh;animation:svelte-hg7nah-bounce 2s infinite}#aboutMe.svelte-hg7nah,#skills.svelte-hg7nah,#projects.svelte-hg7nah,#career.svelte-hg7nah,#footer.svelte-hg7nah{display:flex;justify-content:center}",
@@ -2425,4 +2351,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-ae223ab1.js.map
+//# sourceMappingURL=_page.svelte-35c9c4a5.js.map

@@ -6,7 +6,7 @@
     let projects = [];
 
     onMount(async () => {
-        const response = await axios.get('http://api.github.com/users/yaronrueger/repos')
+        const response = await axios.get('https://api.github.com/users/yaronrueger/repos')
         projects = response.data.map((project: any) => ({
             name: project.full_name,
             description: project.description,
