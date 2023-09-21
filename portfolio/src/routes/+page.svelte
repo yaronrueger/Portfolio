@@ -113,7 +113,7 @@
         max-height: 5vh;
         animation: bounce 2s infinite;
     }
-    #aboutMe, #skills, #projects, #career, #footer{
+    #starter, #aboutMe, #skills, #projects, #career, #footer{
         display: flex;
         justify-content: center;
     }

@@ -54,6 +54,7 @@
         font-family:LouisGeorgeCafe;
         min-height: 95vh;
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
     .starterPage h1{
@@ -76,5 +77,16 @@
     .github:hover, .mail:hover{
         transform: scale(1.3);
         transition: 0.4s;
+    }
+    @media screen and (max-width: 1200px) {
+    .starterPage h1{
+        font-size: 3em;
+    }
+    .starterPage h2{
+        font-size: 1.5em;
+    } 
+    .starterPage{
+        width: 80%;
+    }
     }
 </style>

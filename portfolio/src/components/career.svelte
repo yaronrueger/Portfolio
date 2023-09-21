@@ -23,7 +23,7 @@
                 title="High School Graduation" 
                 date="July 16th 2021" >
                     <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                        On July 31, 2018, I successfully completed my high 
+                        On July 16, 2021, I successfully completed my high 
                         school diploma at Gymnasium Münchberg.
                     </p>
                 </TimelineItem>
@@ -32,7 +32,7 @@
                 date="October 1st 2021">
                     <p class="text-base font-normal text-gray-500 dark:text-gray-400">
                         I have been studying computer science as a dual student at 
-                        Telekom Deutschland AG since 1 October 2021.
+                        Telekom Deutschland AG since October 1, 2021.
                     </p>
                 </TimelineItem>
             </Timeline>
@@ -71,6 +71,9 @@
     @media screen and (max-width: 1200px) {
         .header{
             padding-top: 2vh;
+        }
+        main{
+            padding-bottom: 2vh;
         }
     }
 </style>

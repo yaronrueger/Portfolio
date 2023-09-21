@@ -1807,18 +1807,18 @@ const Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${data ? `${data.svg ? `<svg${spread([escape_object(data.attributes)], {})}><!-- HTML_TAG_START -->${data.body}<!-- HTML_TAG_END --></svg>` : `<span${spread([escape_object(data.attributes)], {})}></span>`}` : ``}`;
 });
 const css$6 = {
-  code: "@font-face{font-family:'RandyGG';font-style:normal;src:url(/fonts/RandyGG/randy-gg.ttf)}@font-face{font-family:'LouisGeorgeCafe';font-style:normal;src:url(/fonts/LouisGeorgeCafe/LouisGeorgeCafeLight.ttf)}main.svelte-gpgb95.svelte-gpgb95{font-family:LouisGeorgeCafe;min-height:95vh;display:flex;flex-direction:column}.starterPage.svelte-gpgb95 h1.svelte-gpgb95{font-size:4em}.starterPage.svelte-gpgb95 h2.svelte-gpgb95{font-size:2em}.header.svelte-gpgb95.svelte-gpgb95{text-align:center;padding-top:30vh}.icons.svelte-gpgb95.svelte-gpgb95{padding-top:25px;display:flex;flex-direction:row;justify-content:center;gap:25px}.github.svelte-gpgb95.svelte-gpgb95:hover,.mail.svelte-gpgb95.svelte-gpgb95:hover{transform:scale(1.3);transition:0.4s}",
+  code: "@font-face{font-family:'RandyGG';font-style:normal;src:url(/fonts/RandyGG/randy-gg.ttf)}@font-face{font-family:'LouisGeorgeCafe';font-style:normal;src:url(/fonts/LouisGeorgeCafe/LouisGeorgeCafeLight.ttf)}main.svelte-zwdilr.svelte-zwdilr{font-family:LouisGeorgeCafe;min-height:95vh;display:flex;align-items:center;flex-direction:column}.starterPage.svelte-zwdilr h1.svelte-zwdilr{font-size:4em}.starterPage.svelte-zwdilr h2.svelte-zwdilr{font-size:2em}.header.svelte-zwdilr.svelte-zwdilr{text-align:center;padding-top:30vh}.icons.svelte-zwdilr.svelte-zwdilr{padding-top:25px;display:flex;flex-direction:row;justify-content:center;gap:25px}.github.svelte-zwdilr.svelte-zwdilr:hover,.mail.svelte-zwdilr.svelte-zwdilr:hover{transform:scale(1.3);transition:0.4s}@media screen and (max-width: 1200px){.starterPage.svelte-zwdilr h1.svelte-zwdilr{font-size:3em}.starterPage.svelte-zwdilr h2.svelte-zwdilr{font-size:1.5em}.starterPage.svelte-zwdilr.svelte-zwdilr{width:80%}}",
   map: null
 };
 const Starter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$6);
-  return `<main class="starterPage dark:text-white svelte-gpgb95"><div class="header svelte-gpgb95">${validate_component(Typewriter, "Typewriter").$$render($$result, { cursor: false, delay: 500 }, {}, {
+  return `<main class="starterPage dark:text-white svelte-zwdilr"><div class="header svelte-zwdilr">${validate_component(Typewriter, "Typewriter").$$render($$result, { cursor: false, delay: 500 }, {}, {
     default: () => {
-      return `<h1 class="svelte-gpgb95" data-svelte-h="svelte-yywgam">Hi, my name is <span class="text-portfolioDark2-100 dark:text-portfolioDark2-200">Yaron Rüger</span></h1>`;
+      return `<h1 class="svelte-zwdilr" data-svelte-h="svelte-yywgam">Hi, my name is <span class="text-portfolioDark2-100 dark:text-portfolioDark2-200">Yaron Rüger</span></h1>`;
     }
   })} ${validate_component(Typewriter, "Typewriter").$$render($$result, { cursor: false, delay: 1465 }, {}, {
     default: () => {
-      return `<h2 class="svelte-gpgb95" data-svelte-h="svelte-tnwqk1">dual student of computer science</h2>`;
+      return `<h2 class="svelte-zwdilr" data-svelte-h="svelte-tnwqk1">dual student of computer science</h2>`;
     }
   })}</div> ${``} </main>`;
 });
@@ -2256,12 +2256,12 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   })}</div> </main>`;
 });
 const css$2 = {
-  code: "@font-face{font-family:'LouisGeorgeCafeLight';font-style:normal;src:url(/fonts/LouisGeorgeCafe/LouisGeorgeCafeLight.ttf)}@font-face{font-family:'LouisGeorgeCafe';font-style:normal;src:url(/fonts/LouisGeorgeCafe/LouisGeorgeCafe.ttf)}main.svelte-z8zxbx{width:80%;font-family:LouisGeorgeCafeLight;padding-bottom:12vh}h2.svelte-z8zxbx{font-size:2.6em}.header.svelte-z8zxbx{padding-top:3vh;text-align:center}.timeline.svelte-z8zxbx{display:flex;justify-content:center}@media screen and (max-width: 1200px){.header.svelte-z8zxbx{padding-top:2vh}}",
+  code: "@font-face{font-family:'LouisGeorgeCafeLight';font-style:normal;src:url(/fonts/LouisGeorgeCafe/LouisGeorgeCafeLight.ttf)}@font-face{font-family:'LouisGeorgeCafe';font-style:normal;src:url(/fonts/LouisGeorgeCafe/LouisGeorgeCafe.ttf)}main.svelte-dmnopk{width:80%;font-family:LouisGeorgeCafeLight;padding-bottom:12vh}h2.svelte-dmnopk{font-size:2.6em}.header.svelte-dmnopk{padding-top:3vh;text-align:center}.timeline.svelte-dmnopk{display:flex;justify-content:center}@media screen and (max-width: 1200px){.header.svelte-dmnopk{padding-top:2vh}main.svelte-dmnopk{padding-bottom:2vh}}",
   map: null
 };
 const Career = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<main class="svelte-z8zxbx"><div class="header svelte-z8zxbx" data-svelte-h="svelte-103canp"><h2 class="text-portfolioDark2-100 dark:text-portfolioDark2-200 svelte-z8zxbx">career</h2></div> <div class="timeline svelte-z8zxbx"><div>${validate_component(Timeline, "Timeline").$$render($$result, {}, {}, {
+  return `<main class="svelte-dmnopk"><div class="header svelte-dmnopk" data-svelte-h="svelte-103canp"><h2 class="text-portfolioDark2-100 dark:text-portfolioDark2-200 svelte-dmnopk">career</h2></div> <div class="timeline svelte-dmnopk"><div>${validate_component(Timeline, "Timeline").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(TimelineItem, "TimelineItem").$$render(
         $$result,
@@ -2285,7 +2285,7 @@ const Career = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {},
         {
           default: () => {
-            return `<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400" data-svelte-h="svelte-17dsqc4">On July 31, 2018, I successfully completed my high 
+            return `<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400" data-svelte-h="svelte-a0k58f">On July 16, 2021, I successfully completed my high 
                         school diploma at Gymnasium Münchberg.</p>`;
           }
         }
@@ -2298,8 +2298,8 @@ const Career = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {},
         {
           default: () => {
-            return `<p class="text-base font-normal text-gray-500 dark:text-gray-400" data-svelte-h="svelte-1mbmntk">I have been studying computer science as a dual student at 
-                        Telekom Deutschland AG since 1 October 2021.</p>`;
+            return `<p class="text-base font-normal text-gray-500 dark:text-gray-400" data-svelte-h="svelte-3atfaq">I have been studying computer science as a dual student at 
+                        Telekom Deutschland AG since October 1, 2021.</p>`;
           }
         }
       )}`;
@@ -2342,13 +2342,13 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   )}</a></div></div> </main>`;
 });
 const css = {
-  code: ":root{scroll-behavior:smooth}@keyframes svelte-hg7nah-bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-20px)}60%{transform:translateY(-15px)}}@keyframes svelte-hg7nah-slide-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes svelte-hg7nah-slide-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(20px)}}.darkMode.svelte-hg7nah{position:fixed;right:15px;top:15px}.iconUp.svelte-hg7nah{position:fixed;right:15px;bottom:15px;visibility:hidden}.iconDown.svelte-hg7nah{display:flex;justify-content:center;width:100%;min-height:5vh;max-height:5vh;animation:svelte-hg7nah-bounce 2s infinite}#aboutMe.svelte-hg7nah,#skills.svelte-hg7nah,#projects.svelte-hg7nah,#career.svelte-hg7nah,#footer.svelte-hg7nah{display:flex;justify-content:center}",
+  code: ":root{scroll-behavior:smooth}@keyframes svelte-1l18npp-bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-20px)}60%{transform:translateY(-15px)}}@keyframes svelte-1l18npp-slide-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes svelte-1l18npp-slide-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(20px)}}.darkMode.svelte-1l18npp{position:fixed;right:15px;top:15px}.iconUp.svelte-1l18npp{position:fixed;right:15px;bottom:15px;visibility:hidden}.iconDown.svelte-1l18npp{display:flex;justify-content:center;width:100%;min-height:5vh;max-height:5vh;animation:svelte-1l18npp-bounce 2s infinite}#starter.svelte-1l18npp,#aboutMe.svelte-1l18npp,#skills.svelte-1l18npp,#projects.svelte-1l18npp,#career.svelte-1l18npp,#footer.svelte-1l18npp{display:flex;justify-content:center}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="darkMode svelte-hg7nah">${validate_component(DarkMode, "DarkMode").$$render($$result, {}, {}, {})}</div> ${``} <main><div id="starter">${validate_component(Starter, "Starter").$$render($$result, {}, {}, {})}</div> ${``} <div id="aboutMe" class="svelte-hg7nah">${validate_component(AboutMe, "AboutMe").$$render($$result, {}, {}, {})}</div> <div id="career" class="svelte-hg7nah">${validate_component(Career, "Career").$$render($$result, {}, {}, {})}</div> <div id="projects" class="svelte-hg7nah">${validate_component(Projects, "Projects").$$render($$result, {}, {}, {})}</div> <div id="skills" class="svelte-hg7nah">${validate_component(Skills, "Skills").$$render($$result, {}, {}, {})}</div> <div id="footer" class="svelte-hg7nah">${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</div> </main>`;
+  return `<div class="darkMode svelte-1l18npp">${validate_component(DarkMode, "DarkMode").$$render($$result, {}, {}, {})}</div> ${``} <main><div id="starter" class="svelte-1l18npp">${validate_component(Starter, "Starter").$$render($$result, {}, {}, {})}</div> ${``} <div id="aboutMe" class="svelte-1l18npp">${validate_component(AboutMe, "AboutMe").$$render($$result, {}, {}, {})}</div> <div id="career" class="svelte-1l18npp">${validate_component(Career, "Career").$$render($$result, {}, {}, {})}</div> <div id="projects" class="svelte-1l18npp">${validate_component(Projects, "Projects").$$render($$result, {}, {}, {})}</div> <div id="skills" class="svelte-1l18npp">${validate_component(Skills, "Skills").$$render($$result, {}, {}, {})}</div> <div id="footer" class="svelte-1l18npp">${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</div> </main>`;
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-35c9c4a5.js.map
+//# sourceMappingURL=_page.svelte-2bcabb77.js.map
