@@ -25,9 +25,7 @@
         {#each skills as skill}
             <div class="skill">
                 <div class="skillIcon">        
-                    <Tooltip tip={skill.tip} style="font-size:1.5vh" bottom>
                         <Icon icon={skill.icon} width="5vh" height="5vh"/>
-                    </Tooltip>
                 </div>
                 <div class="skillBar">
                     <AdvancedRating

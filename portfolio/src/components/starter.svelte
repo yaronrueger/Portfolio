@@ -25,20 +25,16 @@
     </div>
     {#if visible}
         <div class="icons" in:fade="{{delay: 2500, duration: 2000}}">
-            <Tooltip tip="GitHub" style="font-size:1.5vh" bottom>
             <div class="github">
                 <a href="https://github.com/yaronrueger">
                 <Icon icon="ri:github-fill" class="text-portfolioDark2-100 dark:text-portfolioDark2-200"  width="5vh" height="5vh"/>
                 </a>
             </div>
-            </Tooltip>
-            <Tooltip tip="Mail" style="font-size:1.5vh" bottom>
             <div class="mail">
-                <a href="https://github.com">
+                <a href="mailto:yaronrueger@yahoo.de">
                 <Icon icon="ion:mail-outline" class="text-portfolioDark2-100 dark:text-portfolioDark2-200"  width="5vh" height="5vh"/>
                 </a>
             </div>
-            </Tooltip>
         </div>
     {/if}
 </main>
