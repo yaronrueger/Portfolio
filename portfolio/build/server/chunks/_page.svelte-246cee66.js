@@ -2225,7 +2225,7 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       },
       {},
       {}
-    )}</div> <div class="skillBar">${validate_component(AdvancedRating, "AdvancedRating").$$render(
+    )} <p class="text-black dark:text-white">${escape(skill.tip)}</p></div> <div class="skillBar">${validate_component(AdvancedRating, "AdvancedRating").$$render(
       $$result,
       {
         ratingClass: "h-2 bg-portfolioDark2-100 dark:bg-portfolioDark2-200 rounded",
@@ -2342,13 +2342,13 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   )}</a></div></div> </main>`;
 });
 const css = {
-  code: ":root{scroll-behavior:smooth}@keyframes svelte-1l18npp-bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-20px)}60%{transform:translateY(-15px)}}@keyframes svelte-1l18npp-slide-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes svelte-1l18npp-slide-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(20px)}}.darkMode.svelte-1l18npp{position:fixed;right:15px;top:15px}.iconUp.svelte-1l18npp{position:fixed;right:15px;bottom:15px;visibility:hidden}.iconDown.svelte-1l18npp{display:flex;justify-content:center;width:100%;min-height:5vh;max-height:5vh;animation:svelte-1l18npp-bounce 2s infinite}#starter.svelte-1l18npp,#aboutMe.svelte-1l18npp,#skills.svelte-1l18npp,#projects.svelte-1l18npp,#career.svelte-1l18npp,#footer.svelte-1l18npp{display:flex;justify-content:center}",
+  code: ":root{scroll-behavior:smooth}@keyframes svelte-1mcu2ol-bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-20px)}60%{transform:translateY(-15px)}}@keyframes svelte-1mcu2ol-slide-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes svelte-1mcu2ol-slide-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(20px)}}.darkMode.svelte-1mcu2ol{position:fixed;right:15px;top:15px}.iconUp.svelte-1mcu2ol{position:fixed;right:15px;bottom:15px;visibility:hidden}.iconDown.svelte-1mcu2ol{display:flex;justify-content:center;width:100%;min-height:5vh;max-height:5vh;animation:svelte-1mcu2ol-bounce 2s infinite}#starter.svelte-1mcu2ol,#aboutMe.svelte-1mcu2ol,#skills.svelte-1mcu2ol,#projects.svelte-1mcu2ol,#career.svelte-1mcu2ol,#footer.svelte-1mcu2ol{display:flex;justify-content:center}@media screen and (max-width: 1200px){.iconDownChild.svelte-1mcu2ol{display:none}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="darkMode svelte-1l18npp">${validate_component(DarkMode, "DarkMode").$$render($$result, {}, {}, {})}</div> ${``} <main><div id="starter" class="svelte-1l18npp">${validate_component(Starter, "Starter").$$render($$result, {}, {}, {})}</div> ${``} <div id="aboutMe" class="svelte-1l18npp">${validate_component(AboutMe, "AboutMe").$$render($$result, {}, {}, {})}</div> <div id="career" class="svelte-1l18npp">${validate_component(Career, "Career").$$render($$result, {}, {}, {})}</div> <div id="projects" class="svelte-1l18npp">${validate_component(Projects, "Projects").$$render($$result, {}, {}, {})}</div> <div id="skills" class="svelte-1l18npp">${validate_component(Skills, "Skills").$$render($$result, {}, {}, {})}</div> <div id="footer" class="svelte-1l18npp">${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</div> </main>`;
+  return `<div class="darkMode svelte-1mcu2ol">${validate_component(DarkMode, "DarkMode").$$render($$result, {}, {}, {})}</div> ${``} <main><div id="starter" class="svelte-1mcu2ol">${validate_component(Starter, "Starter").$$render($$result, {}, {}, {})}</div> ${``} <div id="aboutMe" class="svelte-1mcu2ol">${validate_component(AboutMe, "AboutMe").$$render($$result, {}, {}, {})}</div> <div id="career" class="svelte-1mcu2ol">${validate_component(Career, "Career").$$render($$result, {}, {}, {})}</div> <div id="projects" class="svelte-1mcu2ol">${validate_component(Projects, "Projects").$$render($$result, {}, {}, {})}</div> <div id="skills" class="svelte-1mcu2ol">${validate_component(Skills, "Skills").$$render($$result, {}, {}, {})}</div> <div id="footer" class="svelte-1mcu2ol">${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</div> </main>`;
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-2bcabb77.js.map
+//# sourceMappingURL=_page.svelte-246cee66.js.map

@@ -26,6 +26,7 @@
             <div class="skill">
                 <div class="skillIcon">        
                         <Icon icon={skill.icon} width="5vh" height="5vh"/>
+                        <p class="text-black dark:text-white">{skill.tip}</p>
                 </div>
                 <div class="skillBar">
                     <AdvancedRating

@@ -35,9 +35,7 @@
     {#if visible}
         <div class="iconDown" in:scale="{{delay: 2860, duration: 500}}">
             <div class="iconDownChild">
-                <a href="#aboutMe">
                     <Icon icon="bx:down-arrow" style="font-size: 3vh;" class=" text-portfolioDark2-100 dark:text-portfolioDark2-200"/>
-                </a>
             </div>
         </div>
     {/if}
@@ -116,5 +114,10 @@
     #starter, #aboutMe, #skills, #projects, #career, #footer{
         display: flex;
         justify-content: center;
+    }
+    @media screen and (max-width: 1200px) {
+        .iconDownChild{
+        display: none;
+    }
     }
 </style>
