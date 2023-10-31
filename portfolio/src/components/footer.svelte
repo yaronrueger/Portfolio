@@ -14,7 +14,7 @@
             </a>
         </div>
         <div class="mail">
-            <a href="mailto:yaronrueger@yahoo.de">
+            <a href="mailto:yaron.rueger@outlook.de">
             <Icon icon="ion:mail-outline" class="text-portfolioDark2-100 dark:text-portfolioDark2-200"  width="5vh" height="5vh"/>
             </a>
         </div>
