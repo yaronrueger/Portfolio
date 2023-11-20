@@ -2329,7 +2329,7 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )}</a></div> <div class="mail svelte-19xgcfk"><a href="mailto:yaronrueger@yahoo.de">${validate_component(Icon, "Icon").$$render(
+  )}</a></div> <div class="mail svelte-19xgcfk"><a href="mailto:yaron.rueger@outlook.de">${validate_component(Icon, "Icon").$$render(
     $$result,
     {
       icon: "ion:mail-outline",
@@ -2351,4 +2351,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-246cee66.js.map
+//# sourceMappingURL=_page.svelte-eb76eef9.js.map
