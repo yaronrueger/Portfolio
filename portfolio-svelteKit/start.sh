@@ -1,7 +1,7 @@
 #!/bin/bash
 
-REPO_PATH="/home/linux/portfolio-docker/Portfolio/portfolio-svelteKit"
-DOCKERFILE_PATH="/home/linux/portfolio-docker/Portfolio/prtfolio-svelteKit"
+REPO_PATH="/home/linux/portfolio-docker/Portfolio"
+DOCKERFILE_PATH="/home/linux/portfolio-docker/Portfolio/portfolio-svelteKit"
 CONTAINER_NAME="portfolio"
 IMAGE_NAME="portfolio"
 
