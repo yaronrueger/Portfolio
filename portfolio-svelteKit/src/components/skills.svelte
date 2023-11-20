@@ -7,8 +7,8 @@
                 {tip:"Python",                  icon:"logos:python",                    points:85},
                 {tip:"PostgreSQL",              icon:"logos:postgresql",                points:75},
                 {tip:"Android + Java/Kotlin",   icon:"flat-color-icons:android-os",     points:77},
-                {tip:"C",                       icon:"devicon:c",                       points:60},
-                {tip:"Typescript",              icon:"devicon:typescript",              points:65},
+                {tip:"C",                       icon:"devicon:c",                       points:37},
+                {tip:"Typescript",              icon:"devicon:typescript",              points:60},
                 {tip:"Javascript",              icon:"logos:javascript",                points:60},
                 {tip:"Svelte(Kit)",             icon:"devicon:svelte",                  points:74}
     ]
