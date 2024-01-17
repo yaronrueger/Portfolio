@@ -60,8 +60,8 @@
         </div>
         <div class="drawerPicture">
             <DeviceMockup>
-                <img src="src/components/pictures/appMain.png" class="dark:hidden w-[272px] h-[572px]" alt="default example 1" />
-                <img src="src/components/pictures/appMain.png" class="hidden dark:block w-[272px] h-[572px]" alt="default example 2" />
+                <img src="images/appMain.png" class="dark:hidden w-[272px] h-[572px]" alt="default example 1" />
+                <img src="images/appMain.png" class="hidden dark:block w-[272px] h-[572px]" alt="default example 2" />
             </DeviceMockup>
         </div>
     </div>
@@ -97,8 +97,8 @@
         </div>
         <div class="drawerPicture ">
             <DeviceMockup device="desktop">
-                <img src="src/components/pictures/quizappMain.png" class="dark:hidden h-[140px] md:h-[262px] w-full rounded-xl" alt="desktop example 1" />
-                <img src="src/components/pictures/quizappMain.png" class="hidden dark:block h-[140px] md:h-[262px] w-full rounded-xl" alt="desktop example 2" />
+                <img src="images/quizappMain.png" class="dark:hidden h-[140px] md:h-[262px] w-full rounded-xl" alt="desktop example 1" />
+                <img src="images/quizappMain.png" class="hidden dark:block h-[140px] md:h-[262px] w-full rounded-xl" alt="desktop example 2" />
             </DeviceMockup>  
         </div>
     </div>
@@ -151,8 +151,8 @@
         </div>
         <div class="drawerPicture">
             <DeviceMockup device="desktop">
-                <img src="src/components/pictures/pgeditor.png" class="dark:hidden h-[140px] md:h-[262px] w-full rounded-xl" alt="desktop example 1" />
-                <img src="src/components/pictures/pgeditor.png" class="hidden dark:block h-[140px] md:h-[262px] w-full rounded-xl" alt="desktop example 2" />
+                <img src="images/pgeditor.png" class="dark:hidden h-[140px] md:h-[262px] w-full rounded-xl" alt="desktop example 1" />
+                <img src="images/pgeditor.png" class="hidden dark:block h-[140px] md:h-[262px] w-full rounded-xl" alt="desktop example 2" />
             </DeviceMockup>              
         </div>
     </div>
