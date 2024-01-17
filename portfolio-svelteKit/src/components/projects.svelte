@@ -200,9 +200,6 @@
     .drawerText{
         width: 40vh;
     }
-    .drawerPicture{
-    }
-
 
     @media screen and (max-width: 1200px) {
         .header{
@@ -210,11 +207,19 @@
             font-size: 0.7em;
         }
         .reposChild{
-        margin: 0;
+        margin: 0 0;
         }
         .drawerParent{
             flex-direction: column;
+            gap:0px;
         }
+
+        .drawerPicture{
+            max-width:auto;
+            max-height: 40vh;
+        }
+
+
     }
 
 </style>
