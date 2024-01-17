@@ -16,6 +16,7 @@
 <main>
     <div class="header">
         <h1 class=" text-portfolioDark2-100 dark:text-portfolioDark2-200">Projects</h1>
+        <h2 class=" text-portfolioDark2-100 dark:text-portfolioDark2-200">(Click on the Projects for more details)</h2>
     </div>
     <div class="reposParent">
 
@@ -175,6 +176,9 @@
     }
     h1{
         font-size: 4em;
+    }
+    h2{
+        font-size: 1.5em;
     }
     .reposParent{
         padding-top: 4vh;

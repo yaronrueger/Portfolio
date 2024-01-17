@@ -2,6 +2,9 @@
     <div class="header">
         <h1 class=" text-portfolioDark2-100 dark:text-portfolioDark2-200">About Me</h1>
     </div>
+    <div class="picture">
+        <img src="images/me.jpeg" alt="me">
+    </div>
     <div class="text">
         <p class="mx-auto text-black dark:text-portfolioDark2-300">
             Hello everyone!<br> 
@@ -40,11 +43,24 @@
         padding-top: 45px;
         width: 60%;
     }
+    .picture {
+            display: flex;
+            justify-content: center;
+        }
+
+        .picture img{
+            height: 350px;
+            width: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
     @media screen and (max-width: 1200px) {
         .picture img{
             height: 150px;
             width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
         }
         .text p{
             font-size: 1em;
