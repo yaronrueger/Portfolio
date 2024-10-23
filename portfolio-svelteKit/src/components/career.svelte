@@ -28,11 +28,18 @@
                     </p>
                 </TimelineItem>
                 <TimelineItem 
-                title="Pursuing Computer Science Degree" 
+                title="Computer Science Degree" 
                 date="October 1st 2021">
                     <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                        I have been studying computer science as a dual student at 
-                        Telekom Deutschland AG since October 1, 2021.
+                        I studied computer science as a dual student at Telekom Technik AG from October 1, 
+                         2021 to September 30, 2024.
+                    </p>
+                </TimelineItem>
+               <TimelineItem 
+                title="Project Engineer Backend" 
+                date="October 1st 2024">
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                        Since October 1, 2024, I have been working at T-Systems International GmbH as a Project Engineer in the backend area.
                     </p>
                 </TimelineItem>
             </Timeline>
