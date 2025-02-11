@@ -1,17 +1,9 @@
-import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import adapter from '@sveltejs/adapter-vercel';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
-	preprocess: vitePreprocess(),
-
+export default {
 	kit: {
 		adapter: adapter({
-			fallback: 'index.html'
+			// see below for options that can be set here
 		})
 	}
 };
-
-export default config;
