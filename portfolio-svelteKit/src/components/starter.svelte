@@ -19,7 +19,7 @@
         </Typewriter>
         <Typewriter cursor={false} delay={1465}>
             <h2>
-                dual student of computer science
+                Software Engineer
             </h2>
         </Typewriter>
     </div>
