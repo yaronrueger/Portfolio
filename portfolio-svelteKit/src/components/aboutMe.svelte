@@ -8,8 +8,8 @@
     <div class="text">
         <p class="mx-auto text-black dark:text-portfolioDark2-300">
             Hello everyone!<br> 
-            My name is <span class="underline text-portfolioDark2-100 dark:text-portfolioDark2-200">Yaron Rüger</span> and I am studying Computer Science 
-            at the <span class="underline text-portfolioDark2-100 dark:text-portfolioDark2-200">Hochschule Provadis</span> in Frankfurt, Germany. 
+            My name is <span class="underline text-portfolioDark2-100 dark:text-portfolioDark2-200">Yaron Rüger</span> and I am a Software Engineer 
+            at <span class="underline text-portfolioDark2-100 dark:text-portfolioDark2-200">T-Systems International GmbH</span> in Nürnberg, Germany. 
             My passion for technology and problem solving has led me to pursue a career in this exciting field. 
             My skills include <span class="underline text-portfolioDark2-100 dark:text-portfolioDark2-200">backend</span> development, 
             where I have gained experience in creating and updating efficient and scalable systems. 
