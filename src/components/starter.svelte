@@ -3,7 +3,6 @@
     import { onMount } from 'svelte';
     import { fade, blur, fly, slide, scale } from 'svelte/transition';
     import Icon from '@iconify/svelte';
-    import Tooltip from "sv-tooltip";
 
     let visible = false;
 

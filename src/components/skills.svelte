@@ -1,7 +1,7 @@
 <script>
     import Tooltip from "sv-tooltip";
     import Icon from '@iconify/svelte';
-    import { AdvancedRating, Rating, ScoreRating } from 'flowbite-svelte';
+
     let skills =[
                 {tip:"Java",                    icon:"logos:java",                      points:87},
                 {tip:"Python",                  icon:"logos:python",                    points:85},
@@ -27,17 +27,14 @@
                         <Icon icon={skill.icon} width="5vh" height="5vh"/>
                         <p class="text-black dark:text-white">{skill.tip}</p>
                 </div>
-                <div class="skillBar">
-                    <AdvancedRating
-                    ratingClass="h-2 bg-portfolioDark2-100 dark:bg-portfolioDark2-200 rounded"
-                    ratingDivClass="'mx-4 w-full h-2 bg-gray-200 rounded dark:bg-gray-700"
-                    divClass="flex items-center mt-2"
-                    rightLabelClass="hidden"
-                    unit="hidden"
-                        ratings={[
-                            {label:'', rating:skill.points}
-                        ]}>
-                    </AdvancedRating>
+                <div class="skillBar flex items-center mt-2">
+                    <div class="w-full h-2 bg-gray-200 rounded dark:bg-gray-700 mx-4">
+                        <div 
+                            class="h-2 bg-portfolioDark2-100 dark:bg-portfolioDark2-200 rounded transition-all duration-300"
+                            style="width: {skill.points}%"
+                        ></div>
+                    </div>
+                    <span class="text-sm text-gray-600 dark:text-gray-400 min-w-[3rem]">{skill.points}%</span>
                 </div>
             </div>
         {/each}
