@@ -1,5 +1,5 @@
 <script>
-     import { Timeline, TimelineItem, Button } from 'flowbite-svelte';
+
 </script>
 
 <main>
@@ -9,40 +9,58 @@
         </h2>
     </div>
     <div class="timeline">
-        <div>
-            <Timeline>
-                <TimelineItem 
-                title="Artificial Intelligence and Neural Networks Workshop" 
-                date="February 2nd 2020">
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                        Through my awakened interest in computer science through school, 
-                        I participated in a workshop on artificial intelligence to learn the basics.
-                    </p>
-                </TimelineItem>
-                <TimelineItem 
-                title="High School Graduation" 
-                date="July 16th 2021" >
-                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                        On July 16, 2021, I successfully completed my high 
-                        school diploma at Gymnasium Münchberg.
-                    </p>
-                </TimelineItem>
-                <TimelineItem 
-                title="Computer Science Degree" 
-                date="October 1st 2021">
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                        I studied computer science as a dual student at Telekom Technik AG from October 1, 
-                         2021 to September 30, 2024.
-                    </p>
-                </TimelineItem>
-               <TimelineItem 
-                title="Project Engineer Backend" 
-                date="October 1st 2024">
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                        Since October 1, 2024, I have been working at T-Systems International GmbH as a Project Engineer in the backend area.
-                    </p>
-                </TimelineItem>
-            </Timeline>
+        <div class="relative border-l border-gray-200 dark:border-gray-700 ml-3">
+            <div class="mb-10 ml-6">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                    <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </span>
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Artificial Intelligence and Neural Networks Workshop</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2nd 2020</time>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Through my awakened interest in computer science through school, 
+                    I participated in a workshop on artificial intelligence to learn the basics.
+                </p>
+            </div>
+            <div class="mb-10 ml-6">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                    <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">High School Graduation</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 16th 2021</time>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    On July 16, 2021, I successfully completed my high 
+                    school diploma at Gymnasium Münchberg.
+                </p>
+            </div>
+            <div class="mb-10 ml-6">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                    <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Computer Science Degree</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October 1st 2021</time>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    I studied computer science as a dual student at Telekom Technik AG from October 1, 
+                     2021 to September 30, 2024.
+                </p>
+            </div>
+            <div class="mb-10 ml-6">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                    <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Project Engineer Backend</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October 1st 2024</time>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Since October 1, 2024, I have been working at T-Systems International GmbH as a Project Engineer in the backend area.
+                </p>
+            </div>
         </div>
     </div>
 </main>

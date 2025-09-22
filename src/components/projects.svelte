@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Card } from 'flowbite-svelte';
     import Icon from '@iconify/svelte';
     
     interface Repository {
