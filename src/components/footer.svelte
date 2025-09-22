@@ -2,11 +2,11 @@
         import { fade, blur, fly, slide, scale } from 'svelte/transition';
         import Icon from '@iconify/svelte';
         import Tooltip from "sv-tooltip";
-        import { Hr } from 'flowbite-svelte';
+
 </script>
 
 <main>
-    <Hr classHr="w-full mx-auto my-8 rounded md:my-10" />
+    <hr class="w-full mx-auto my-8 border-gray-200 rounded md:my-10 dark:border-gray-700" />
     <div class="icons" in:fade="{{delay: 2500, duration: 2000}}">
         <div class="github">
             <a href="https://github.com/yaronrueger">
