@@ -131,16 +131,29 @@
     }
     
     .project-card {
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         padding: 2rem;
         transition: all 0.3s ease;
         backdrop-filter: blur(10px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    :global(.dark) .project-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: none;
     }
     
     .project-card:hover {
         transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.95);
+        border-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    :global(.dark) .project-card:hover {
         background: rgba(255, 255, 255, 0.15);
         border-color: rgba(255, 255, 255, 0.3);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
