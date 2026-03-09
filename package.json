@@ -12,12 +12,12 @@
 		"@sveltejs/adapter-auto": "^6.1.0",
 		"@sveltejs/adapter-node": "^5.3.2",
 		"@sveltejs/adapter-static": "^3.0.9",
-		"@sveltejs/kit": "^2.42.2",
+		"@sveltejs/kit": "^2.49.5",
 		"@sveltejs/vite-plugin-svelte": "^6.2.0",
 
 		"autoprefixer": "^10.4.21",
 		"postcss": "^8.5.6",
-		"svelte": "^5.39.4",
+		"svelte": "^5.51.5",
 		"tailwindcss": "^3.3.6",
 		"vite": "^7.1.7"
 	},
@@ -25,7 +25,7 @@
 	"dependencies": {
 		"@iconify/svelte": "^5.0.2",
 		"@popperjs/core": "^2.11.8",
-		"axios": "^1.12.2",
+		"axios": "^1.13.5",
 		"sv-tooltip": "^0.2.5",
 		"svelte-reveal": "^1.1.0",
 		"svelte-typewriter": "^3.1.6",
